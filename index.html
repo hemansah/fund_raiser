@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: burlywood;
+        }
+    </style>
+
+    <script>
+        function Copy(id) {
+            var copyText = document.getElementById(id);
+            copyText.select();
+            copyText.setSelectionRange(0, 99999);
+            navigator.clipboard.writeText(copyText.value);
+            alert(copyText.value + " has been copied to your clipboard");
+        }
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-sm-12">
+                <img class="mx-auto d-block" src="1316100742743.jpg" alt="Hemant Sah" height="60%" width="80%">
+                <h1>Help me to raise funds for my computer this Birthday...</h1>
+                <h4>Even a single ₹ matters, but don't send that please.</h4>
+                <div class="mt-5">
+                    <h2>Send using UPI</h2>
+                    <!-- <div><span><input id="upi" value="hemantsah18@ybl" type="text"> <button onclick="Copy()">Copy text</button></span></div> -->
+                    <div class="input-group mb-3">
+                        <input disabled type="text" id="upi1" class="form-control" value="hemantsah18@ybl"
+                            aria-label="upi" aria-describedby="basic-addon2">
+                        <div class="input-group-append">
+                            <button onclick="Copy('upi1')" class="btn text-white bg-dark" type="button">Copy</button>
+                        </div>
+                    </div>
+                    <div class="input-group mb-3">
+                        <input disabled type="text" id="upi2" class="form-control" value="8084809069@ybl"
+                            aria-label="upi" aria-describedby="basic-addon2">
+                        <div class="input-group-append">
+                            <button onclick="Copy('upi2')" class="btn text-white bg-dark" type="button">Copy</button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="mt-5">
+                    <h2>Bitcoin accepted too</h2>
+                    <div class="input-group mb-3">
+                        <input disabled type="text" id="crypto" class="form-control"
+                            value="3BTCipy8NsRroHzKUq7D3xiZaP3HASvLiR" aria-label="crypto"
+                            aria-describedby="basic-addon2">
+                        <div class="input-group-append">
+                            <button onclick="Copy('crypto')" class="btn text-white bg-dark"
+                                type="button">Copy</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+</body>
+
+</html>
